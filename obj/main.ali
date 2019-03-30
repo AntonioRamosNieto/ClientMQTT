@@ -1,0 +1,172 @@
+V "GNAT Lib v2018"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_NESTED_FINALIZATION
+RV NO_RELATIVE_DELAY
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_STREAMS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		3b7f973a NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.strings.utf_encoding%s  a-stuten.adb	a-stuten.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.sockets%s	g-socket.adb		g-socket.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+
+D ada.ads		20180525052300 76789da1 ada%s
+D a-calend.ads		20180525052301 372815c8 ada.calendar%s
+D a-caldel.ads		20180525052259 9f20b83d ada.calendar.delays%s
+D a-charac.ads		20180525052301 2d3ec45b ada.characters%s
+D a-chlat1.ads		20180525052301 66457d31 ada.characters.latin_1%s
+D a-except.ads		20180525052301 291912d5 ada.exceptions%s
+D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
+D a-ioexce.ads		20180525052259 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
+D a-string.ads		20180525052301 90ac6797 ada.strings%s
+D a-strmap.ads		20180525052301 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20180525052301 8098c91f ada.strings.unbounded%s
+D a-stuten.ads		20180525052301 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20180525052302 491b781d ada.tags%s
+D a-textio.ads		20180525052302 881db35a ada.text_io%s
+D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20180525052301 eff36322 ada.unchecked_deallocation%s
+D gnat.ads		20180525052302 fd2ad2f1 gnat%s
+D g-socket.ads		20180525052302 e8c63e95 gnat.sockets%s
+D interfac.ads		20180525052300 5ab55268 interfaces%s
+D i-c.ads		20180525052259 5421119b interfaces.c%s
+D i-cstrea.ads		20180525052259 e53d8b8e interfaces.c_streams%s
+D main.adb		20190330181438 4a2b1cf4 main%b
+D system.ads		20180525052301 4635ec04 system%s
+D s-atocou.ads		20180525052302 b45c2d8d system.atomic_counters%s
+D s-conca2.ads		20180525052301 02a0d7d0 system.concat_2%s
+D s-conca5.ads		20180525052300 875e432e system.concat_5%s
+D s-crtl.ads		20180525052259 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180525052301 54135002 system.exception_table%s
+D s-ficobl.ads		20180525052302 078245e4 system.file_control_block%s
+D s-finmas.ads		20180525052301 7811a767 system.finalization_masters%s
+D s-finroo.ads		20180525052301 4ff27390 system.finalization_root%s
+D s-memory.ads		20180525052301 597d6634 system.memory%s
+D s-oscons.ads		20180525174850 0dad428b system.os_constants%s
+D s-parame.ads		20180525052302 48ec542b system.parameters%s
+D s-pooglo.ads		20180525052259 ede33ef8 system.pool_global%s
+D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
+D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
+D s-stalib.adb		20180525052259 f2fe2716 system.standard_library%b
+D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20180525052300 b16154c2 system.storage_pools%s
+D s-stposu.ads		20180525052259 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20180525052259 aedef97e system.stream_attributes%s
+D s-string.ads		20180525052301 8fe54fb7 system.strings%s
+D s-ststop.ads		20180525052300 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180525052301 1b7d22d2 system.wch_con%s
+D unchconv.ads		20180525052259 ca2f9e18 unchecked_conversion%s
+X 1 ada.ads
+16K9*Ada 20e8 23|2r6 3r6 3r33 4r6 4r23 5r6 5r36 67r17 68r17 69r17 93r31 95r10
+X 9 a-stream.ads
+36K13*Streams 87e16 23|4w10 4r27 67r21 68r21
+42M9*Stream_Element
+44I9*Stream_Element_Offset<long_long_integer> 23|68r29
+54A9*Stream_Element_Array(42M9)<44I9> 23|67r29
+X 10 a-string.ads
+16K13*Strings 35e16 23|3r10 3r37 5r10 5r40 69r21 93r35
+X 12 a-strunb.ads
+76K21*Unbounded 491e26 23|3w18 3r45 69r29 93r43
+79R9*Unbounded_String<7|43R9> 474e14 23|69r39
+100V13*To_String{string} 23|93s53
+131V14*"&"{79R9} 23|91s21
+X 13 a-stuten.ads
+42K21*UTF_Encoding 144e29 23|5w18 5r48
+59A12*UTF_8_String{string}<integer> 23|30r29 51r23 54r23 57r29 70r37 104r28
+. 107r26
+X 15 a-textio.ads
+49K13*Text_IO 471e16 23|2w10 95r14
+263U14*Put_Line 23|95s22
+X 18 gnat.ads
+34K9*GNAT 37e9 23|1r6 18r17 19r18 21r14 22r14 23r14 79r23 81r7 82r7 86r18
+. 89r7
+X 19 g-socket.ads
+55K14*Sockets 1288e17 23|1w11 18r22 19r23 21r19 22r19 23r19 79r28 81r12 82r12
+. 86r23 89r12
+412I9*Socket_Type<integer> 23|22r27
+483I9*Port_Type<integer>
+509R9*Sock_Addr_Type 512e14 23|21r27
+510r7*Addr{492R9} 23|79m15
+511i7*Port{483I9} 23|80m15
+537R9*Host_Entry_Type 1272e14 23|18r30
+554V13*Addresses{492R9} 23|79s36
+571V13*Get_Host_By_Name{537R9} 23|19s31
+821U14*Create_Socket 23|81s20
+861U14*Connect_Socket 23|82s20
+915U14*Receive_Socket 23|89s20
+1025P9*Stream_Access(9|39R9) 23|23r27
+1028V13*Stream{1025P9} 23|86s31
+X 23 main.adb
+7U11*Main 7b11 132l5 132t9
+9a4 Username{string} 53r23 59r58 62r9
+10a4 Password{string} 56r23 59r90 64r9
+11b4 Aceptado{boolean} 122m4
+13a4 To{string} 127r16
+14a4 Mes{string} 127r19
+16a4 Host{string} 19r48
+18r4 Host_Entry{19|537R9} 79r46
+21r4 Address{19|509R9} 79m7 80m7 82r44
+22i4 Socket{19|412I9} 81m35 82r36 86r39 89r35
+23p4 Channel{19|1025P9} 86m7 87r21 115r21
+26V13 ConnectMQTT{boolean} 26b13 99l8 99t19 122s16
+27b7 Accepted{boolean} 94m10 97r14
+28e7 Mqtt_Conn{character} 58r9
+30a7 Conn_header{13|59A12} 59r23 60r9
+51a7 ULen{13|59A12} 59r44 61r9
+54a7 PLen{13|59A12} 59r76 63r9
+57a7 Connection{13|59A12} 87r30
+67a7 Data{9|54A9} 89m42 91r37
+68i7 Size{9|44I9} 89m47 90r21
+69r7 Ret{12|79R9} 91m10 91r17 93r63
+70a7 Connection_Acepted{13|59A12} 93r10
+90i11 i<long_long_integer> 91r42
+101U14 SendMQTT 101b14 101>24 101>43 118l8 118t16 127s7
+101a24 Topic{string} 106r23 109r43 111r9
+101a43 Message{string} 109r58 112r9
+102e7 Mqtt_Pub{character} 108r9
+104a7 Pub_header=105:31{string} 109r23 110r9
+107a7 Publish=111:15{string} 115r30
+X 24 system.ads
+67M9*Address
+X 33 s-memory.ads
+53V13*Alloc{24|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{24|67M9} 105i<c,__gnat_realloc>22
+X 41 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+

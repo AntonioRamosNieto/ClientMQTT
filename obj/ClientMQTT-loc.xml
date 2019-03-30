@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_file>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
+      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/main.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >/home/antonio/workspaceTFG/MQTT/ClientMQTT.gpr</vfs_file>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_project >/home/antonio/workspaceTFG/MQTT/ClientMQTT.gpr</vfs_project>
+      <vfs_file >/home/antonio/workspaceTFG/MQTT/src/main.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
