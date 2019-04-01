@@ -4,6 +4,7 @@ b__main.o
 /home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr
 20190330190429
 [BOUND OBJECT FILES]
+/home/antonio/workspaceTFG/ClientMQTT/obj/client_mqtt.o
 /home/antonio/workspaceTFG/ClientMQTT/obj/main.o
 [GENERATED SOURCE FILES]
 b__main.ads
