@@ -23,7 +23,7 @@ procedure Main is
    Channel : GNAT.Sockets.Stream_Access;
 
 
-   function ConnectMQTT return Boolean is
+   procedure ConnectMQTT is
       Accepted : Boolean := False;
       Mqtt_Conn : constant Character :=
         Character'Val(16#10#);
@@ -72,6 +72,7 @@ procedure Main is
         Character'Val(16#02#) &
         Character'Val(16#00#) &
         Character'Val(16#00#);
+      Except : exception;
 
    begin
 
@@ -91,10 +92,10 @@ procedure Main is
          Ret := Ret & Character'Val(Data(i));
       end loop;
       if Connection_Acepted = Ada.Strings.Unbounded.To_String(Ret) then
-         Accepted := True;
-         Ada.Text_IO.Put_Line ("Acepted");
+         Ada.Text_IO.Put_Line ("MQTT connection acepted");
+      else
+         raise Except with "MQTT CONNECTION NOT ACEPTED";
       end if;
-      return Accepted;
 
    end ConnectMQTT;
 
@@ -119,7 +120,7 @@ procedure Main is
 
 
 begin
-   Aceptado := ConnectMQTT;
+   ConnectMQTT;
    delay (0.1);
 
 
