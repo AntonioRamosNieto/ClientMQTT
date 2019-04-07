@@ -5,32 +5,41 @@ A -march=x86-64
 P ZX
 
 RN
+RV NO_DELAY
 RV NO_DISPATCHING_CALLS
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTION_PROPAGATION
 RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
 RV NO_IO
 RV NO_IMPLICIT_CONDITIONALS
 RV NO_NESTED_FINALIZATION
+RV NO_PROTECTED_TYPES
+RV NO_RELATIVE_DELAY
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_STREAMS
+RV NO_TASKING
 RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
+RV MAX_TASK_ENTRIES=1
+RV MAX_TASKS=1
+RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U client_mqtt%b		client_mqtt.adb		e6e4af19 OO PK IL
+U client_mqtt%b		client_mqtt.adb		93a017ae OO PK IL
 W ada%s			ada.ads			ada.ali
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.streams%s		a-stream.adb		a-stream.ali
-W ada.strings%s		a-string.ads		a-string.ali
-W ada.strings.utf_encoding%s  a-stuten.adb	a-stuten.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 Z system%s		system.ads		system.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
 Z system.concat_5%s	s-conca5.adb		s-conca5.ali
 Z system.concat_9%s	s-conca9.adb		s-conca9.ali
 Z system.exception_table%s  s-exctab.adb	s-exctab.ali
@@ -38,27 +47,42 @@ Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
 Z system.standard_library%s  s-stalib.adb	s-stalib.ali
 Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
-U client_mqtt%s		client_mqtt.ads		12f93e67 EE OO PF PK IL
+U client_mqtt%s		client_mqtt.ads		586b0409 EE OO PF PK IL
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
 Z ada.streams%s		a-stream.adb		a-stream.ali
 W ada.strings%s		a-string.ads		a-string.ali
 W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.strings.utf_encoding%s  a-stuten.adb	a-stuten.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W gnat%s		gnat.ads		gnat.ali
 W gnat.sockets%s	g-socket.adb		g-socket.ali
 Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
 Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
 Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
 D ada.ads		20180525052300 76789da1 ada%s
+D a-calend.ads		20180525052301 372815c8 ada.calendar%s
+D a-caldel.ads		20180525052259 9f20b83d ada.calendar.delays%s
 D a-charac.ads		20180525052301 2d3ec45b ada.characters%s
 D a-chlat1.ads		20180525052301 66457d31 ada.characters.latin_1%s
 D a-except.ads		20180525052301 291912d5 ada.exceptions%s
 D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
 D a-ioexce.ads		20180525052259 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20180525052302 0240fc73 ada.real_time%s
 D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
 D a-string.ads		20180525052301 90ac6797 ada.strings%s
 D a-strmap.ads		20180525052301 e8bb714a ada.strings.maps%s
@@ -68,16 +92,19 @@ D a-tags.ads		20180525052302 491b781d ada.tags%s
 D a-textio.ads		20180525052302 881db35a ada.text_io%s
 D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20180525052301 eff36322 ada.unchecked_deallocation%s
-D client_mqtt.ads	20190401205601 7aa7c9ed client_mqtt%s
-D client_mqtt.adb	20190401205849 85491ab0 client_mqtt%b
+D client_mqtt.ads	20190407104121 b0b9b32e client_mqtt%s
+D client_mqtt.adb	20190407103407 ba9f9869 client_mqtt%b
 D gnat.ads		20180525052302 fd2ad2f1 gnat%s
 D g-socket.ads		20180525052302 e8c63e95 gnat.sockets%s
 D interfac.ads		20180525052300 5ab55268 interfaces%s
 D i-c.ads		20180525052259 5421119b interfaces.c%s
 D i-cstrea.ads		20180525052259 e53d8b8e interfaces.c_streams%s
 D system.ads		20180525052301 4635ec04 system%s
+D s-atacco.ads		20180525052301 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20180525052302 b45c2d8d system.atomic_counters%s
 D s-conca2.ads		20180525052301 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20180525052302 0b705ca5 system.concat_3%s
+D s-conca4.ads		20180525052301 7e642b20 system.concat_4%s
 D s-conca5.ads		20180525052300 875e432e system.concat_5%s
 D s-conca9.ads		20180525052301 dc4a3424 system.concat_9%s
 D s-crtl.ads		20180525052259 0ebbdb71 system.crtl%s
@@ -85,13 +112,17 @@ D s-exctab.ads		20180525052301 54135002 system.exception_table%s
 D s-ficobl.ads		20180525052302 078245e4 system.file_control_block%s
 D s-finmas.ads		20180525052301 7811a767 system.finalization_masters%s
 D s-finroo.ads		20180525052301 4ff27390 system.finalization_root%s
+D s-linux.ads		20180525052302 2fda6ad1 system.linux%s
 D s-memory.ads		20180525052301 597d6634 system.memory%s
+D s-multip.ads		20180525052259 38ac9f73 system.multiprocessors%s
 D s-oscons.ads		20180525174850 0dad428b system.os_constants%s
+D s-osinte.ads		20180525052302 aeca802d system.os_interface%s
 D s-parame.ads		20180525052302 48ec542b system.parameters%s
 D s-pooglo.ads		20180525052259 ede33ef8 system.pool_global%s
 D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
 D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
 D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180525052301 017a0a05 system.stack_usage%s
 D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
 D s-stalib.adb		20180525052259 f2fe2716 system.standard_library%b
 D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
@@ -101,99 +132,154 @@ D s-stposu.ads		20180525052259 97a6219c system.storage_pools.subpools%s
 D s-stratt.ads		20180525052259 aedef97e system.stream_attributes%s
 D s-string.ads		20180525052301 8fe54fb7 system.strings%s
 D s-ststop.ads		20180525052300 5fbf1b38 system.strings.stream_ops%s
+D s-tasinf.ads		20180525052302 2b3f8252 system.task_info%s
+D s-taspri.ads		20180525052302 f40ac08d system.task_primitives%s
+D s-taprop.ads		20180525052302 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20180525052302 1d8c1ccb system.tasking%s
+D s-taprob.ads		20180525052302 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20180525052302 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20180525052302 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20180525052302 cca55c94 system.tasking.stages%s
 D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180525052301 1b7d22d2 system.wch_con%s
 D unchconv.ads		20180525052259 ca2f9e18 unchecked_conversion%s
 X 1 ada.ads
-16K9*Ada 20e8 16|2r6 2r33 17|2r6 3r6 3r23 4r6 4r36 84r10
-X 7 a-stream.ads
-36K13*Streams 87e16 17|3w10 3r27
+16K9*Ada 20e8 19|2r6 2r33 4r6 4r36 20|2r6 3r6 3r23 35r16 118r10 177r10
+X 10 a-stream.ads
+36K13*Streams 87e16 20|3w10 3r27
 42M9*Stream_Element
-44I9*Stream_Element_Offset<long_long_integer> 17|57r17
-54A9*Stream_Element_Array(42M9)<44I9> 17|56r17
-X 8 a-string.ads
-16K13*Strings 35e16 16|2r10 2r37 17|4r10 4r40
-X 10 a-strunb.ads
-76K21*Unbounded 491e26 16|2w18 2r45
-79R9*Unbounded_String<5|43R9> 474e14 16|10r14 12r19 13r18 14r18 18r15 19r17
-. 17|58r17
-100V13*To_String{string} 17|13s38 14s37 15s37 16s33 83s31 92s34 93s36
-131V14*"&"{79R9} 17|81s21
-X 11 a-stuten.ads
-42K21*UTF_Encoding 144e29 17|4w18 4r48
-59A12*UTF_8_String{string}<integer> 17|22r29 35r25 38r23 41r23 44r29 59r37
-. 96r28 99r26
-X 13 a-textio.ads
-49K13*Text_IO 471e16 17|2w10 84r14
-263U14*Put_Line 17|84s22
-X 16 client_mqtt.ads
-5K9*client_mqtt 26E9 32l5 32e16 17|6b14 114l5 114t16
-7R9*Connection_MQTT 22p14 22r41 23p14 23r36 26c9 29e14 17|11r41 91r36
-9R9*Connection_Parameters 15e14 22r74 17|11r74
-10r7*Host{10|79R9} 17|16r54
-11i7*Port{19|483I9} 17|70r34
-12r7*Client_ID{10|79R9} 17|13r59
-13r7*Username{10|79R9} 17|14r58
-14r7*Password{10|79R9} 17|15r58
-17R9*Publish_Parameters 20e14 23r69 17|91r69
-18r7*Topic{10|79R9} 17|92r55
-19r7*Message{10|79R9} 17|93r57
-22U14*ConnectMQTT 22=27 22>58 17|11b14 89l8 89t19
-22r27 This{7R9} 17|11b27 71m22 71r22 72r23 76m7 76r31 77r21 79r22
-22r58 Parameters{9R9} 17|11b58 13r48 14r47 15r47 16r43 70r23
-23U14*PublishMQTT 23>27 23>53 17|91b14 110l8 110t19
-23r27 This{7R9} 17|91b27 107r21
-23r53 Parameters{17R9} 17|91b53 92r44 93r46
-27p7*Channel{19|1025P9} 17|76m12 77r26 107r26
-28i7*Socket{19|412I9} 17|71m27 72r28 76r36 79r27
-X 17 client_mqtt.adb
-13a7 Client_ID{string} 37r23 46r60 49r9
-14a7 Username{string} 40r23 46r93 51r9
-15a7 Password{string} 43r23 46r125 53r9
-16a7 Host{string} 17r56
-17r7 Host_Entry{19|537R9} 69r33
-18r7 Address{19|509R9} 69m7 70m7 72r36
-20e7 Mqtt_Conn{character} 45r9
-22a7 Conn_header{11|59A12} 46r23 47r9
-35a7 CIDLen=36:31{string} 46r44 48r9
-38a7 ULen=39:31{string} 46r79 50r9
-41a7 PLen=42:31{string} 46r111 52r9
-44a7 Connection=52:14{string} 77r35
-56a7 Data{7|54A9} 79m34 81r37
-57i7 Size{7|44I9} 79m39 80r21
-58r7 Ret{10|79R9} 81m10 81r17 83r41
-59a7 Connection_Acepted{11|59A12} 83r10
-64X7 Except 86r16
-80i11 i<long_long_integer> 81r42
-92a7 Topic{string} 98r23 101r43 103r9
-93a7 Message{string} 101r58 104r9
-94e7 Mqtt_Pub{character} 100r9
-96a7 Pub_header=97:31{string} 101r23 102r9
-99a7 Publish=103:15{string} 107r35
-X 18 gnat.ads
-34K9*GNAT 16|3r6 3r24 18|37e9
-X 19 g-socket.ads
-55K14*Sockets 16|3w11 3r29 19|1288e17
-412I9*Socket_Type<integer> 16|28r16
-483I9*Port_Type<integer> 16|11r14
-509R9*Sock_Addr_Type 17|18r17 19|512e14
-510r7*Addr{492R9} 17|69m15
-511i7*Port{483I9} 17|70m15
-537R9*Host_Entry_Type 17|17r20 19|1272e14
-554V13*Addresses{492R9} 17|69s23
-571V13*Get_Host_By_Name{537R9} 17|17s39
-821U14*Create_Socket 17|71s7
-861U14*Connect_Socket 17|72s7
-915U14*Receive_Socket 17|79s7
-1025P9*Stream_Access(7|39R9) 16|27r17
-1028V13*Stream{1025P9} 17|76s23
-X 23 system.ads
+44I9*Stream_Element_Offset<long_long_integer> 20|12r17 91r17 166r17
+54A9*Stream_Element_Array(42M9)<44I9> 20|11r17 90r17 165r17
+X 11 a-string.ads
+16K13*Strings 35e16 19|2r10 2r37 4r10 4r40
+X 13 a-strunb.ads
+76K21*Unbounded 491e26 19|2w18 2r45
+79R9*Unbounded_String<7|43R9> 474e14 19|11r14 13r19 14r18 15r18 19r15 20r17
+. 25r15 28r26 20|13r17 15r23 92r17 167r17
+94V13*To_Unbounded_String{79R9} 20|39s17
+100V13*To_String{string} 20|20s28 20s68 22s26 24s12 34s16 34s43 47s38 48s37
+. 49s37 50s33 117s31 126s34 127s36 147s34 176s27
+123V14*"&"{79R9} 20|23s34
+127V14*"&"{79R9} 20|22s67
+131V14*"&"{79R9} 20|32s27 115s21 174s21
+X 14 a-stuten.ads
+42K21*UTF_Encoding 144e29 19|4w18 4r48
+59A12*UTF_8_String{string}<integer> 19|27r19 20|56r29 69r25 72r23 75r23 78r29
+. 93r37 130r28 133r26 150r28 154r28 160r33
+X 16 a-textio.ads
+49K13*Text_IO 471e16 20|2w10 35r20 118r14 177r14
+263U14*Put_Line 20|35s28 118s22 177s22
+X 19 client_mqtt.ads
+6K9*client_mqtt 41E14 66l5 66e16 20|5b14 204l5 204t16
+8R9*Connection_MQTT 32p14 32r41 33p14 33r36 34p14 34r38 53r53 59c9 62e14
+. 20|14r24 17r54 45r41 125r36 146r38
+10R9*Connection_Parameters 16e14 32r74 20|45r74
+11r7*Host{13|79R9} 20|50r54
+12i7*Port{22|483I9} 20|104r34
+13r7*Client_ID{13|79R9} 20|47r59
+14r7*Username{13|79R9} 20|48r58
+15r7*Password{13|79R9} 20|49r58
+18R9*Publish_Parameters 21e14 33r69 20|125r69
+19r7*Topic{13|79R9} 20|126r55
+20r7*Message{13|79R9} 20|127r57
+24R9*Subscribe_Parameters 29e14 34r71 53r91 20|17r91 146r71
+25r7*Topic{13|79R9} 20|20r54 22r52 23r28 147r55
+26e7*QoS{character} 20|159r20 164r20
+27a7*Packet_ID{string} 20|151r20 163r20
+28r7*Expected_Message{13|79R9} 20|20r94 24r38
+32U14*ConnectMQTT 32=27 32>58 20|45b14 123l8 123t19
+32r27 This{8R9} 20|45b27 105m22 105r22 106r23 110m7 110r31 111r21 113r22
+32r58 Parameters{10R9} 20|45b58 47r48 48r47 49r47 50r43 104r23
+33U14*PublishMQTT 33>27 33>53 20|125b14 144l8 144t19
+33r27 This{8R9} 20|125b27 141r21
+33r53 Parameters{18R9} 20|125b53 126r44 127r46
+34U14*SubscribeMQTT 34>29 34>55 20|146b14 183l8 183t21
+34r29 This{8R9} 20|146b29 171r21 172r22 181r38
+34r55 Parameters{24R9} 20|146b55 147r44 151r9 159r9 163r9 164r9 181r44
+36V13*ReceivedMQTT{boolean} 49b13
+37U14*ReadingMQTT 50b14
+41w14 Control_Subscriber 49r49 50r34 20|36r16 187b19 200l8 200t26
+42U17 DoneReadingMQTT 50s53 20|192b17 195l11 195t26
+43U17 Set_ReceivedMQTT 43>34 20|36s35 188b17 191l11 191t27 194s10
+43b34 set{boolean} 20|188b34 190r26
+44V16 Get_ReceivedMQTT{boolean} 49s68 20|196b16 199l11 199t27
+46b7 ReceivedMQTT{boolean} 20|190r10 198r17
+52T14 Subscriber_Task 54l8 54e23 57r15 20|10b14 41l8 41t23
+53Y13 Start_Subscriber_Task 53>36 53>70 20|17b14 26l11 26t32 181s16
+53r36 InConnection{8R9} 20|18r28
+53r70 Subscribe_Param{24R9} 20|20r38 20r78 22r36 23r12 24r22
+57t4 Sub_task{52T14} 20|181r7
+60p7*Channel{22|1025P9} 20|110m12 111r26 141r26 171r26
+61i7*Socket{22|412I9} 20|29r40 105m27 106r28 110r36 113r27 172r27
+X 20 client_mqtt.adb
+11a7 Data{10|54A9} 29m47 32r43
+12i7 Size{10|44I9} 29m52 30r14 31r27
+13r7 Ret{13|79R9} 32m16 32r23 34r53 39m10
+14r7 sub_connection{19|8R9} 18m10 29r25
+15r7 Expected_MQTT{13|79R9} 19m10 34r26
+17r37 InConnection{19|8R9}
+17r70 Subscribe_Param{19|24R9}
+31i17 i<long_long_integer> 32r48
+47a7 Client_ID{string} 71r23 80r60 83r9
+48a7 Username{string} 74r23 80r93 85r9
+49a7 Password{string} 77r23 80r125 87r9
+50a7 Host{string} 51r56
+51r7 Host_Entry{22|537R9} 103r33
+52r7 Address{22|509R9} 103m7 104m7 106r36
+54e7 Mqtt_Conn{character} 79r9
+56a7 Conn_header{14|59A12} 80r23 81r9
+69a7 CIDLen=70:31{string} 80r44 82r9
+72a7 ULen=73:31{string} 80r79 84r9
+75a7 PLen=76:31{string} 80r111 86r9
+78a7 Connection=86:14{string} 111r35
+90a7 Data{10|54A9} 113m34 115r37
+91i7 Size{10|44I9} 113m39 114r21
+92r7 Ret{13|79R9} 115m10 115r17 117r41
+93a7 Connection_Acepted{14|59A12} 117r10
+98X7 Except 120r16
+114i11 i<long_long_integer> 115r42
+126a7 Topic{string} 132r23 135r43 137r9
+127a7 Message{string} 135r58 138r9
+128e7 Mqtt_Pub{character} 134r9
+130a7 Pub_header=131:31{string} 135r23 136r9
+133a7 Publish=137:15{string} 141r35
+147a7 Topic{string} 153r23 156r43 158r9 177r54
+148e7 Mqtt_Sub{character} 155r9
+150a7 Sub_header=152:31{string} 156r23 157r9
+154a7 Subscribe=158:15{string} 171r35
+160a7 Subscriber_Ack=163:30{string} 176r10
+165a7 Data{10|54A9} 172m34 174r37
+166i7 Size{10|44I9} 172m39 173r21
+167r7 Ret{13|79R9} 174m10 174r17 176r37
+168X7 Except 179r16
+173i11 i<long_long_integer> 174r42
+X 21 gnat.ads
+34K9*GNAT 19|3r6 3r24 21|37e9
+X 22 g-socket.ads
+55K14*Sockets 19|3w11 3r29 22|1288e17
+412I9*Socket_Type<integer> 19|61r16
+483I9*Port_Type<integer> 19|12r14
+509R9*Sock_Addr_Type 20|52r17 22|512e14
+510r7*Addr{492R9} 20|103m15
+511i7*Port{483I9} 20|104m15
+537R9*Host_Entry_Type 20|51r20 22|1272e14
+554V13*Addresses{492R9} 20|103s23
+571V13*Get_Host_By_Name{537R9} 20|51s39
+821U14*Create_Socket 20|105s7
+861U14*Connect_Socket 20|106s7
+915U14*Receive_Socket 20|29s10 113s7 172s7
+1025P9*Stream_Access(10|39R9) 19|60r17
+1028V13*Stream{1025P9} 20|110s23
+X 26 system.ads
 67M9*Address
-X 33 s-memory.ads
-53V13*Alloc{23|67M9} 103i<c,__gnat_malloc>22
+X 40 s-memory.ads
+53V13*Alloc{26|67M9} 103i<c,__gnat_malloc>22
 68U14*Free 104i<c,__gnat_free>22
-76V13*Realloc{23|67M9} 105i<c,__gnat_realloc>22
-X 41 s-stalib.adb
+76V13*Realloc{26|67M9} 105i<c,__gnat_realloc>22
+X 49 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 51 s-stalib.adb
 93U14 Break_Start 94i<c,__gnat_break_start>22
 
