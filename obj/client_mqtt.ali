@@ -6,6 +6,7 @@ P ZX
 
 RN
 RV NO_DELAY
+RV NO_DISPATCH
 RV NO_DISPATCHING_CALLS
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTION_PROPAGATION
@@ -18,7 +19,6 @@ RV NO_PROTECTED_TYPES
 RV NO_RELATIVE_DELAY
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
-RV NO_STREAMS
 RV NO_TASKING
 RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
@@ -29,13 +29,18 @@ RV MAX_TASK_ENTRIES=1
 RV MAX_TASKS=1
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U client_mqtt%b		client_mqtt.adb		93a017ae OO PK IL
+U client_mqtt%b		client_mqtt.adb		9a78b379 OO PK IL
 W ada%s			ada.ads			ada.ali
 Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.streams%s		a-stream.adb		a-stream.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+W aws%s			aws.ads			aws.ali
+W aws.client%s		aws-client.adb		aws-client.ali  AD
+W aws.client.http_utils%s  aws-client-http_utils.adb  aws-client-http_utils.ali
+W aws.net%s		aws-net.adb		aws-net.ali  AD
+W aws.net.buffered%s	aws-net-buffered.adb	aws-net-buffered.ali  AD
 Z system%s		system.ads		system.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
 Z system.concat_3%s	s-conca3.adb		s-conca3.ali
@@ -46,29 +51,28 @@ Z system.exception_table%s  s-exctab.adb	s-exctab.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
 Z system.standard_library%s  s-stalib.adb	s-stalib.ali
-Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
 Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
 Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
 Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
-U client_mqtt%s		client_mqtt.ads		586b0409 EE OO PF PK IL
+U client_mqtt%s		client_mqtt.ads		276e86ba EE OO PF PK IL
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.real_time%s	a-reatim.adb		a-reatim.ali
-Z ada.streams%s		a-stream.adb		a-stream.ali
 W ada.strings%s		a-string.ads		a-string.ali
 W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
 W ada.strings.utf_encoding%s  a-stuten.adb	a-stuten.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
+W aws%s			aws.ads			aws.ali
+W aws.client%s		aws-client.adb		aws-client.ali
 W gnat%s		gnat.ads		gnat.ali
 W gnat.sockets%s	g-socket.adb		g-socket.ali
 Z system%s		system.ads		system.ali
 Z system.parameters%s	s-parame.adb		s-parame.ali
-Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
 Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
-Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
 Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
 Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
@@ -79,26 +83,80 @@ D a-calend.ads		20180525052301 372815c8 ada.calendar%s
 D a-caldel.ads		20180525052259 9f20b83d ada.calendar.delays%s
 D a-charac.ads		20180525052301 2d3ec45b ada.characters%s
 D a-chlat1.ads		20180525052301 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20180525052259 61e5e089 ada.containers%s
+D a-cohata.ads		20180525052302 80a8c839 ada.containers.hash_tables%s
+D a-conhel.ads		20180525052300 20298884 ada.containers.helpers%s
+D a-cihama.ads		20180525052300 bece8dbf ada.containers.indefinite_hashed_maps%s
+D a-cihase.ads		20180525052300 4f8a62e0 ada.containers.indefinite_hashed_sets%s
+D a-coinho.ads		20180525052301 4c5ae072 ada.containers.indefinite_holders%s
+D a-ciorma.ads		20180525052300 e1f95638 ada.containers.indefinite_ordered_maps%s
+D a-coinve.ads		20180525052302 b7300cfa ada.containers.indefinite_vectors%s
+D a-crbltr.ads		20180525052301 c3e90a86 ada.containers.red_black_trees%s
+D a-convec.ads		20180525052302 7e2b0fdf ada.containers.vectors%s
+D a-direct.ads		20180525052300 078228da ada.directories%s
+D a-envvar.ads		20180525052300 00080416 ada.environment_variables%s
 D a-except.ads		20180525052301 291912d5 ada.exceptions%s
 D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
 D a-ioexce.ads		20180525052259 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20180525052300 7c7305e9 ada.iterator_interfaces%s
 D a-reatim.ads		20180525052302 0240fc73 ada.real_time%s
 D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
 D a-string.ads		20180525052301 90ac6797 ada.strings%s
+D a-strfix.ads		20180525052302 d07c346e ada.strings.fixed%s
+D a-strhas.ads		20180525052302 c71c2a52 ada.strings.hash%s
 D a-strmap.ads		20180525052301 e8bb714a ada.strings.maps%s
+D a-stmaco.ads		20180525052259 1c0e5368 ada.strings.maps.constants%s
 D a-strunb.ads		20180525052301 8098c91f ada.strings.unbounded%s
 D a-stuten.ads		20180525052301 808c40ad ada.strings.utf_encoding%s
 D a-tags.ads		20180525052302 491b781d ada.tags%s
+D a-taside.ads		20180525052302 c3e0cda8 ada.task_identification%s
 D a-textio.ads		20180525052302 881db35a ada.text_io%s
 D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20180525052301 eff36322 ada.unchecked_deallocation%s
-D client_mqtt.ads	20190407104121 b0b9b32e client_mqtt%s
-D client_mqtt.adb	20190407103407 ba9f9869 client_mqtt%b
+D aws.ads		20190413094955 d28ddbae aws%s
+D aws-attachments.ads	20190413094955 2270236e aws.attachments%s
+D aws-client.ads	20190413094955 f468f4fb aws.client%s
+D aws-client-http_utils.ads  20190413094955 ba3e8b8d aws.client.http_utils%s
+D aws-config.ads	20190413094955 abec052a aws.config%s
+D aws-containers.ads	20190413094955 c7ab8288 aws.containers%s
+D aws-containers-memory_streams.ads  20190413094955 ea28c859 aws.containers.memory_streams%s
+D aws-containers-string_vectors.ads  20190413094955 b5692847 aws.containers.string_vectors%s
+D aws-containers-tables.ads  20190413094955 dda133b5 aws.containers.tables%s
+D aws-default.ads	20190413094955 4983fa2f aws.default%s
+D aws-headers.ads	20190413094955 25633780 aws.headers%s
+D aws-messages.ads	20190413094955 0ce1462a aws.messages%s
+D aws-mime.ads		20190413094955 796c9a32 aws.mime%s
+D aws-net.ads		20190413094955 4345e169 aws.net%s
+D aws-net-buffered.ads	20190413094955 98a7e729 aws.net.buffered%s
+D aws-net-ssl.ads	20190413094955 0e3b7ef4 aws.net.ssl%s
+D aws-net-ssl-certificate.ads  20190413094955 4eafed25 aws.net.ssl.certificate%s
+D aws-net-std.ads	20190413094955 956a50f7 aws.net.std%s
+D aws-parameters.ads	20190413094955 ff4aa491 aws.parameters%s
+D aws-resources.ads	20190413094955 407ba395 aws.resources%s
+D aws-resources-streams.ads  20190413094955 95c86167 aws.resources.streams%s
+D aws-resources-streams-memory.ads  20190413094955 eb23d323 aws.resources.streams.memory%s
+D aws-response.ads	20190413094955 907d00d3 aws.response%s
+D aws-session.ads	20190413094955 41acdbbb aws.session%s
+D aws-status.ads	20190413094955 715df1ae aws.status%s
+D aws-url.ads		20190413094955 44a3858c aws.url%s
+D aws-utils.ads		20190413094955 8f9a062b aws.utils%s
+D client_mqtt.ads	20190414173238 3bd4c566 client_mqtt%s
+D client_mqtt.adb	20190414173307 1ab32652 client_mqtt%b
 D gnat.ads		20180525052302 fd2ad2f1 gnat%s
+D g-bytswa.ads		20180525052300 a4d21639 gnat.byte_swapping%s
+D g-regexp.ads		20180525052301 691be386 gnat.regexp%s
+D g-sechas.ads		20180525052302 3b5ca98e gnat.secure_hashes%s
+D g-shsh32.ads		20180525052301 671c9849 gnat.secure_hashes.sha2_32%s
+D g-shshco.ads		20180525052302 1144502c gnat.secure_hashes.sha2_common%s
+D g-sha256.ads		20180525052301 c083f050 gnat.sha256%s
 D g-socket.ads		20180525052302 e8c63e95 gnat.sockets%s
 D interfac.ads		20180525052300 5ab55268 interfaces%s
 D i-c.ads		20180525052259 5421119b interfaces.c%s
+D i-cstrin.ads		20180525052301 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20180525052259 e53d8b8e interfaces.c_streams%s
+D memory_streams.ads	20190413094955 bf3b9ce5 memory_streams%s
+D ssl.ads		20190413094955 3abd0079 ssl%s
+D ssl-thin__openssl.ads	20190413094954 d8a6b6aa ssl.thin%s
 D system.ads		20180525052301 4635ec04 system%s
 D s-atacco.ads		20180525052301 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20180525052302 b45c2d8d system.atomic_counters%s
@@ -119,6 +177,7 @@ D s-oscons.ads		20180525174850 0dad428b system.os_constants%s
 D s-osinte.ads		20180525052302 aeca802d system.os_interface%s
 D s-parame.ads		20180525052302 48ec542b system.parameters%s
 D s-pooglo.ads		20180525052259 ede33ef8 system.pool_global%s
+D s-regexp.ads		20180525052302 9c7d27a7 system.regexp%s
 D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
 D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
 D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
@@ -143,143 +202,167 @@ D s-tassta.ads		20180525052302 cca55c94 system.tasking.stages%s
 D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180525052301 1b7d22d2 system.wch_con%s
+D templates_parser.ads	20190413094958 619e699c templates_parser%s
+D templates_parser-utils.ads  20190413094958 8849593d templates_parser.utils%s
+D templates_parser_tasking.ads  20190413094958 4c0209f0 templates_parser_tasking%s
 D unchconv.ads		20180525052259 ca2f9e18 unchecked_conversion%s
+D zlib.ads		20190413094955 0714e1ed zlib%s
 X 1 ada.ads
-16K9*Ada 20e8 19|2r6 2r33 4r6 4r36 20|2r6 3r6 3r23 35r16 118r10 177r10
-X 10 a-stream.ads
-36K13*Streams 87e16 20|3w10 3r27
+16K9*Ada 20e8 63|2r6 2r33 4r6 4r36 64|2r6 3r6 3r23 37r19 111r7 126r10 188r10
+X 8 a-conhel.ads
+84R12 Reference_Control_Type<19|43R9>
+X 21 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[15|111]>
+X 23 a-stream.ads
+36K13*Streams 87e16 64|3w10 3r27
 42M9*Stream_Element
-44I9*Stream_Element_Offset<long_long_integer> 20|12r17 91r17 166r17
-54A9*Stream_Element_Array(42M9)<44I9> 20|11r17 90r17 165r17
-X 11 a-string.ads
-16K13*Strings 35e16 19|2r10 2r37 4r10 4r40
-X 13 a-strunb.ads
-76K21*Unbounded 491e26 19|2w18 2r45
-79R9*Unbounded_String<7|43R9> 474e14 19|11r14 13r19 14r18 15r18 19r15 20r17
-. 25r15 28r26 20|13r17 15r23 92r17 167r17
-94V13*To_Unbounded_String{79R9} 20|39s17
-100V13*To_String{string} 20|20s28 20s68 22s26 24s12 34s16 34s43 47s38 48s37
-. 49s37 50s33 117s31 126s34 127s36 147s34 176s27
-123V14*"&"{79R9} 20|23s34
-127V14*"&"{79R9} 20|22s67
-131V14*"&"{79R9} 20|32s27 115s21 174s21
-X 14 a-stuten.ads
-42K21*UTF_Encoding 144e29 19|4w18 4r48
-59A12*UTF_8_String{string}<integer> 19|27r19 20|56r29 69r25 72r23 75r23 78r29
-. 93r37 130r28 133r26 150r28 154r28 160r33
-X 16 a-textio.ads
-49K13*Text_IO 471e16 20|2w10 35r20 118r14 177r14
-263U14*Put_Line 20|35s28 118s22 177s22
-X 19 client_mqtt.ads
-6K9*client_mqtt 41E14 66l5 66e16 20|5b14 204l5 204t16
-8R9*Connection_MQTT 32p14 32r41 33p14 33r36 34p14 34r38 53r53 59c9 62e14
-. 20|14r24 17r54 45r41 125r36 146r38
-10R9*Connection_Parameters 16e14 32r74 20|45r74
-11r7*Host{13|79R9} 20|50r54
-12i7*Port{22|483I9} 20|104r34
-13r7*Client_ID{13|79R9} 20|47r59
-14r7*Username{13|79R9} 20|48r58
-15r7*Password{13|79R9} 20|49r58
-18R9*Publish_Parameters 21e14 33r69 20|125r69
-19r7*Topic{13|79R9} 20|126r55
-20r7*Message{13|79R9} 20|127r57
-24R9*Subscribe_Parameters 29e14 34r71 53r91 20|17r91 146r71
-25r7*Topic{13|79R9} 20|20r54 22r52 23r28 147r55
-26e7*QoS{character} 20|159r20 164r20
-27a7*Packet_ID{string} 20|151r20 163r20
-28r7*Expected_Message{13|79R9} 20|20r94 24r38
-32U14*ConnectMQTT 32=27 32>58 20|45b14 123l8 123t19
-32r27 This{8R9} 20|45b27 105m22 105r22 106r23 110m7 110r31 111r21 113r22
-32r58 Parameters{10R9} 20|45b58 47r48 48r47 49r47 50r43 104r23
-33U14*PublishMQTT 33>27 33>53 20|125b14 144l8 144t19
-33r27 This{8R9} 20|125b27 141r21
-33r53 Parameters{18R9} 20|125b53 126r44 127r46
-34U14*SubscribeMQTT 34>29 34>55 20|146b14 183l8 183t21
-34r29 This{8R9} 20|146b29 171r21 172r22 181r38
-34r55 Parameters{24R9} 20|146b55 147r44 151r9 159r9 163r9 164r9 181r44
+44I9*Stream_Element_Offset<long_long_integer> 64|14r17 92r17 175r17
+54A9*Stream_Element_Array(42M9)<44I9> 64|13r17 91r17 174r17
+X 24 a-string.ads
+16K13*Strings 35e16 63|2r10 2r37 4r10 4r40
+X 29 a-strunb.ads
+76K21*Unbounded 491e26 63|2w18 2r45
+79R9*Unbounded_String<19|43R9> 474e14 63|11r14 12r14 13r19 14r18 15r18 19r15
+. 20r17 25r15 28r26 64|15r17 16r23 53r13 93r17 176r17
+94V13*To_Unbounded_String{79R9} 64|41s20
+100V13*To_String{string} 64|21s28 21s68 23s26 25s12 36s19 36s46 50s38 51s37
+. 52s37 111s29 113s38 125s31 134s34 135s36 156s34 187s27
+119V14*"&"{79R9} 64|105s52 107s51
+123V14*"&"{79R9} 64|24s34 105s46 107s45
+127V14*"&"{79R9} 64|23s67 105s28 107s27
+131V14*"&"{79R9} 64|34s30 123s21 185s21
+X 30 a-stuten.ads
+42K21*UTF_Encoding 144e29 63|4w18 4r48
+59A12*UTF_8_String{string}<integer> 63|27r19 64|57r29 70r25 73r23 76r23 79r26
+. 94r37 138r28 141r26 159r28 163r28 169r33
+X 33 a-textio.ads
+49K13*Text_IO 471e16 64|2w10 37r23 111r11 126r14 188r14
+263U14*Put_Line 64|37s31 111s19 126s22 188s22
+X 36 aws.ads
+32K9*AWS 41e8 63|5r6 5r22 64|4r6 5r6 5r33
+X 38 aws-client.ads
+49K13*Client 659e15 63|5w10 60r20 64|5r10 26r20 113r7 114r7 118r24 119r26
+. 121r25 149r24 150r26 180r24 181r26 183r25
+289R9*HTTP_Connection<19|50R9> 634e14 63|60r27
+307U14*Create 64|113s14
+316b7 Persistent{boolean} 64|113r53
+548V13*Get_Socket{49|55P9} 64|26s27 118s31 119s33 121s32 149s31 150s33 180s31
+. 181s33 183s32
+X 39 aws-client-http_utils.ads
+36K20*HTTP_Utils 185e26 64|5w17 114r14
+64U14*Connect 64|114s25
+X 49 aws-net.ads
+44K13*Net 501e12 64|4r10 17r16 17r40 31r13 118r7 119r7 121r7 149r7 150r7
+. 180r7 181r7 183r7
+54C9*Socket_Type<54R9>
+54H9*Socket_Type<19|43R9> 471e14 64|17r20
+55P9*Socket_Access(54R9)
+89V13*Socket{54C9} 64|17s44
+X 50 aws-net-buffered.ads
+35K17*Buffered 142e21 64|4w14 31r17 118r11 119r11 121r11 149r11 150r11 180r11
+. 181r11 183r11
+41U14*Put 64|118s20 149s20 180s20
+55U14*Flush 64|119s20 150s20 181s20
+86U14*Read 64|31s26 121s20 183s20
+X 63 client_mqtt.ads
+6K9*client_mqtt 41E14 67l5 67e16 64|7b14 215l5 215t16
+8R9*Connection_MQTT 32p14 32r41 33p14 33r41 34p14 34r43 53r58 59c9 62e14
+. 64|19r59 48r41 133r41 155r43
+10R9*Connection_Parameters 16e14 32r74 64|48r74
+11r7*Host{29|79R9} 64|105r41 107r40
+12r7*Port{29|79R9} 64|105r65 107r64
+13r7*Client_ID{29|79R9} 64|50r59
+14r7*Username{29|79R9} 64|51r58
+15r7*Password{29|79R9} 64|52r58
+18R9*Publish_Parameters 21e14 33r74 64|133r74
+19r7*Topic{29|79R9} 64|134r55
+20r7*Message{29|79R9} 64|135r57
+24R9*Subscribe_Parameters 29e14 34r76 53r96 64|19r97 155r76
+25r7*Topic{29|79R9} 64|21r54 23r52 24r28 156r55
+26e7*QoS{character} 64|168r20 173r20
+27a7*Packet_ID{string} 64|160r20 172r20
+28r7*Expected_Message{29|79R9} 64|21r94 25r38
+32U14*ConnectMQTT 32=27 32>58 64|48b14 131l8 131t19
+32r27 This{8R9} 64|48b27 102m7 113m22 113r22 114m33 114r33 118r42 119r44
+. 121r43
+32r58 Parameters{10R9} 64|48b58 50r48 51r47 52r47 105r30 105r54 107r29 107r53
+33U14*PublishMQTT 33=27 33>58 64|133b14 153l8 153t19
+33r27 This{8R9} 64|133b27 149r42 150r44
+33r58 Parameters{18R9} 64|133b58 134r44 135r46
+34U14*SubscribeMQTT 34=29 34>60 64|155b14 194l8 194t21
+34r29 This{8R9} 64|155b29 180r42 181r44 183r43 192m39
+34r60 Parameters{24R9} 64|155b60 156r44 160r9 168r9 172r9 173r9 192r45
 36V13*ReceivedMQTT{boolean} 49b13
 37U14*ReadingMQTT 50b14
-41w14 Control_Subscriber 49r49 50r34 20|36r16 187b19 200l8 200t26
-42U17 DoneReadingMQTT 50s53 20|192b17 195l11 195t26
-43U17 Set_ReceivedMQTT 43>34 20|36s35 188b17 191l11 191t27 194s10
-43b34 set{boolean} 20|188b34 190r26
-44V16 Get_ReceivedMQTT{boolean} 49s68 20|196b16 199l11 199t27
-46b7 ReceivedMQTT{boolean} 20|190r10 198r17
-52T14 Subscriber_Task 54l8 54e23 57r15 20|10b14 41l8 41t23
-53Y13 Start_Subscriber_Task 53>36 53>70 20|17b14 26l11 26t32 181s16
-53r36 InConnection{8R9} 20|18r28
-53r70 Subscribe_Param{24R9} 20|20r38 20r78 22r36 23r12 24r22
-57t4 Sub_task{52T14} 20|181r7
-60p7*Channel{22|1025P9} 20|110m12 111r26 141r26 171r26
-61i7*Socket{22|412I9} 20|29r40 105m27 106r28 110r36 113r27 172r27
-X 20 client_mqtt.adb
-11a7 Data{10|54A9} 29m47 32r43
-12i7 Size{10|44I9} 29m52 30r14 31r27
-13r7 Ret{13|79R9} 32m16 32r23 34r53 39m10
-14r7 sub_connection{19|8R9} 18m10 29r25
-15r7 Expected_MQTT{13|79R9} 19m10 34r26
-17r37 InConnection{19|8R9}
-17r70 Subscribe_Param{19|24R9}
-31i17 i<long_long_integer> 32r48
-47a7 Client_ID{string} 71r23 80r60 83r9
-48a7 Username{string} 74r23 80r93 85r9
-49a7 Password{string} 77r23 80r125 87r9
-50a7 Host{string} 51r56
-51r7 Host_Entry{22|537R9} 103r33
-52r7 Address{22|509R9} 103m7 104m7 106r36
-54e7 Mqtt_Conn{character} 79r9
-56a7 Conn_header{14|59A12} 80r23 81r9
-69a7 CIDLen=70:31{string} 80r44 82r9
-72a7 ULen=73:31{string} 80r79 84r9
-75a7 PLen=76:31{string} 80r111 86r9
-78a7 Connection=86:14{string} 111r35
-90a7 Data{10|54A9} 113m34 115r37
-91i7 Size{10|44I9} 113m39 114r21
-92r7 Ret{13|79R9} 115m10 115r17 117r41
-93a7 Connection_Acepted{14|59A12} 117r10
-98X7 Except 120r16
-114i11 i<long_long_integer> 115r42
-126a7 Topic{string} 132r23 135r43 137r9
-127a7 Message{string} 135r58 138r9
-128e7 Mqtt_Pub{character} 134r9
-130a7 Pub_header=131:31{string} 135r23 136r9
-133a7 Publish=137:15{string} 141r35
-147a7 Topic{string} 153r23 156r43 158r9 177r54
-148e7 Mqtt_Sub{character} 155r9
-150a7 Sub_header=152:31{string} 156r23 157r9
-154a7 Subscribe=158:15{string} 171r35
-160a7 Subscriber_Ack=163:30{string} 176r10
-165a7 Data{10|54A9} 172m34 174r37
-166i7 Size{10|44I9} 172m39 173r21
-167r7 Ret{13|79R9} 174m10 174r17 176r37
-168X7 Except 179r16
-173i11 i<long_long_integer> 174r42
-X 21 gnat.ads
-34K9*GNAT 19|3r6 3r24 21|37e9
-X 22 g-socket.ads
-55K14*Sockets 19|3w11 3r29 22|1288e17
-412I9*Socket_Type<integer> 19|61r16
-483I9*Port_Type<integer> 19|12r14
-509R9*Sock_Addr_Type 20|52r17 22|512e14
-510r7*Addr{492R9} 20|103m15
-511i7*Port{483I9} 20|104m15
-537R9*Host_Entry_Type 20|51r20 22|1272e14
-554V13*Addresses{492R9} 20|103s23
-571V13*Get_Host_By_Name{537R9} 20|51s39
-821U14*Create_Socket 20|105s7
-861U14*Connect_Socket 20|106s7
-915U14*Receive_Socket 20|29s10 113s7 172s7
-1025P9*Stream_Access(10|39R9) 19|60r17
-1028V13*Stream{1025P9} 20|110s23
-X 26 system.ads
+41w14 Control_Subscriber 49r49 50r34 64|38r19 198b19 211l8 211t26
+42U17 DoneReadingMQTT 50s53 64|203b17 206l11 206t26
+43U17 Set_ReceivedMQTT 43>34 64|38s38 199b17 202l11 202t27 205s10
+43b34 set{boolean} 64|199b34 201r26
+44V16 Get_ReceivedMQTT{boolean} 49s68 64|207b16 210l11 210t27
+46b7 ReceivedMQTT{boolean} 64|201r10 209r17
+52T14 Subscriber_Task 54l8 54e23 57r15 64|12b14 44l8 44t23
+53Y13 Start_Subscriber_Task 53=36 53>75 64|19b14 28l11 28t32 192s16
+53r36 InConnection{8R9} 64|26r38
+53r75 Subscribe_Param{24R9} 64|21r38 21r78 23r36 24r12 25r22
+57t4 Sub_task{52T14} 64|192r7
+60r7*Connection{38|289R9} 64|26r51 113m27 114m38 118r47 119r49 121r48 149r47
+. 150r49 180r47 181r49 183r48
+61b7*Secure{boolean} 64|102m12
+64b4 Security{boolean} 64|17r51 102r22 104r10
+X 64 client_mqtt.adb
+13a7 Data{23|54A9} 31m38 34r46
+14i7 Size{23|44I9} 31m43 32r17 33r30
+15r7 Ret{29|79R9} 34m19 34r26 36r56 41m13
+16r7 Expected_MQTT{29|79R9} 20m10 36r29
+17c7 Socket<49|54R9> 26m10 31r31
+19r37 InConnection{63|8R9}
+19r76 Subscribe_Param{63|24R9}
+33i20 i<long_long_integer> 34r51
+50a7 Client_ID{string} 72r23 81r60 84r9
+51a7 Username{string} 75r23 81r93 86r9
+52a7 Password{string} 78r23 81r125 88r9
+53r7 URL{29|79R9} 105m10 107m10 111r39 113r48
+55e7 Mqtt_Conn{character} 80r9
+57a7 Conn_header{30|59A12} 81r23 82r9
+70a7 CIDLen=71:31{string} 81r44 83r9
+73a7 ULen=74:31{string} 81r79 85r9
+76a7 PLen=77:31{string} 81r111 87r9
+79a7 Connect=87:14{string} 118r63
+91a7 Data{23|54A9} 121m64 123r37
+92i7 Size{23|44I9} 121m69 122r21
+93r7 Ret{29|79R9} 123m10 123r17 125r41
+94a7 Connection_Acepted{30|59A12} 125r10
+99X7 Except 128r16
+122i11 i<long_long_integer> 123r42
+134a7 Topic{string} 140r23 143r43 145r9
+135a7 Message{string} 143r58 146r9
+136e7 Mqtt_Pub{character} 142r9
+138a7 Pub_header=139:31{string} 143r23 144r9
+141a7 Publish=145:15{string} 149r63
+156a7 Topic{string} 162r23 165r43 167r9 188r54
+157e7 Mqtt_Sub{character} 164r9
+159a7 Sub_header=161:31{string} 165r23 166r9
+163a7 Subscribe=167:15{string} 180r63
+169a7 Subscriber_Ack=172:30{string} 187r10
+174a7 Data{23|54A9} 183m64 185r37
+175i7 Size{23|44I9} 183m69 184r21
+176r7 Ret{29|79R9} 185m10 185r17 187r37
+177X7 Except 190r16
+184i11 i<long_long_integer> 185r42
+X 65 gnat.ads
+34K9*GNAT 63|3r6 3r24 65|37e9
+X 72 g-socket.ads
+55K14*Sockets 63|3w11 3r29 72|1288e17
+X 80 system.ads
 67M9*Address
-X 40 s-memory.ads
-53V13*Alloc{26|67M9} 103i<c,__gnat_malloc>22
+X 94 s-memory.ads
+53V13*Alloc{80|67M9} 103i<c,__gnat_malloc>22
 68U14*Free 104i<c,__gnat_free>22
-76V13*Realloc{26|67M9} 105i<c,__gnat_realloc>22
-X 49 s-stausa.ads
+76V13*Realloc{80|67M9} 105i<c,__gnat_realloc>22
+X 104 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
-X 51 s-stalib.adb
+X 106 s-stalib.adb
 93U14 Break_Start 94i<c,__gnat_break_start>22
 

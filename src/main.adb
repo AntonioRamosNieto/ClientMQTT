@@ -3,11 +3,12 @@ with client_mqtt; use client_mqtt;
 with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 with GNAT.Sockets; use GNAT.Sockets;
 with Ada.Text_IO;
+with AWS.Client; use AWS;
 
 procedure Main is
    Parametros_conexion : constant Connection_Parameters :=
      (Host => To_Unbounded_String ("m24.cloudmqtt.com"),
-      Port => 15484,
+      Port => To_Unbounded_String ("25484"),
       Client_ID => To_Unbounded_String ("AABBCC"),
       Username => To_Unbounded_String ("cunjkfki"),
       Password => To_Unbounded_String ("NiROE_oOt3ZF"));

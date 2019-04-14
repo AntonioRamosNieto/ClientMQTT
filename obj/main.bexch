@@ -2,7 +2,9 @@
 b__main.o
 [PROJECT FILES]
 /home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr
-20190330190429
+20190413102023
+/home/antonio/opt/GNAT/2018/share/gpr/aws.gpr
+20190413100713
 [BOUND OBJECT FILES]
 /home/antonio/workspaceTFG/ClientMQTT/obj/client_mqtt.o
 /home/antonio/workspaceTFG/ClientMQTT/obj/main.o
@@ -13,6 +15,7 @@ b__main.ali
 [RESULTING OPTIONS]
 -L/home/antonio/workspaceTFG/ClientMQTT/obj/
 -L/home/antonio/workspaceTFG/ClientMQTT/obj/
+-L/home/antonio/opt/GNAT/2018/lib/aws.static/
 -L/home/antonio/opt/GNAT/2018/lib/gcc/x86_64-pc-linux-gnu/7.3.1/adalib/
 -static
 -static-libgcc
