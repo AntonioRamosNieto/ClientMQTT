@@ -29,7 +29,7 @@ RV MAX_TASK_ENTRIES=1
 RV MAX_TASKS=1
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U client_mqtt%b		client_mqtt.adb		9a78b379 OO PK IL
+U client_mqtt%b		client_mqtt.adb		ac6d0936 OO PK IL
 W ada%s			ada.ads			ada.ali
 Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
@@ -57,7 +57,7 @@ Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
 Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
 Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
-U client_mqtt%s		client_mqtt.ads		276e86ba EE OO PF PK IL
+U client_mqtt%s		client_mqtt.ads		e0bbe228 EE OO PF PK IL
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.real_time%s	a-reatim.adb		a-reatim.ali
@@ -140,8 +140,8 @@ D aws-session.ads	20190413094955 41acdbbb aws.session%s
 D aws-status.ads	20190413094955 715df1ae aws.status%s
 D aws-url.ads		20190413094955 44a3858c aws.url%s
 D aws-utils.ads		20190413094955 8f9a062b aws.utils%s
-D client_mqtt.ads	20190414173238 3bd4c566 client_mqtt%s
-D client_mqtt.adb	20190414173307 1ab32652 client_mqtt%b
+D client_mqtt.ads	20190415111030 fc01a1f4 client_mqtt%s
+D client_mqtt.adb	20190415111030 eb73f88f client_mqtt%b
 D gnat.ads		20180525052302 fd2ad2f1 gnat%s
 D g-bytswa.ads		20180525052300 a4d21639 gnat.byte_swapping%s
 D g-regexp.ads		20180525052301 691be386 gnat.regexp%s
@@ -208,152 +208,153 @@ D templates_parser_tasking.ads  20190413094958 4c0209f0 templates_parser_tasking
 D unchconv.ads		20180525052259 ca2f9e18 unchecked_conversion%s
 D zlib.ads		20190413094955 0714e1ed zlib%s
 X 1 ada.ads
-16K9*Ada 20e8 63|2r6 2r33 4r6 4r36 64|2r6 3r6 3r23 37r19 111r7 126r10 188r10
+16K9*Ada 20e8 63|35r6 35r33 37r6 37r36 64|37r6 38r6 38r23 74r19 119r7 136r10
+. 205r10
 X 8 a-conhel.ads
 84R12 Reference_Control_Type<19|43R9>
 X 21 a-iteint.ads
 24h9 Forward_Iterator
-32h9 Reversible_Iterator<24R9[15|111]>
+32h9 Reversible_Iterator<24R9[12|70]>
 X 23 a-stream.ads
-36K13*Streams 87e16 64|3w10 3r27
+36K13*Streams 87e16 64|38w10 38r27
 42M9*Stream_Element
-44I9*Stream_Element_Offset<long_long_integer> 64|14r17 92r17 175r17
-54A9*Stream_Element_Array(42M9)<44I9> 64|13r17 91r17 174r17
+44I9*Stream_Element_Offset<long_long_integer> 64|51r17 108r17 190r17
+54A9*Stream_Element_Array(42M9)<44I9> 64|50r17 107r17 189r17
 X 24 a-string.ads
-16K13*Strings 35e16 63|2r10 2r37 4r10 4r40
+16K13*Strings 35e16 63|35r10 35r37 37r10 37r40
 X 29 a-strunb.ads
-76K21*Unbounded 491e26 63|2w18 2r45
-79R9*Unbounded_String<19|43R9> 474e14 63|11r14 12r14 13r19 14r18 15r18 19r15
-. 20r17 25r15 28r26 64|15r17 16r23 53r13 93r17 176r17
-94V13*To_Unbounded_String{79R9} 64|41s20
-100V13*To_String{string} 64|21s28 21s68 23s26 25s12 36s19 36s46 50s38 51s37
-. 52s37 111s29 113s38 125s31 134s34 135s36 156s34 187s27
-119V14*"&"{79R9} 64|105s52 107s51
-123V14*"&"{79R9} 64|24s34 105s46 107s45
-127V14*"&"{79R9} 64|23s67 105s28 107s27
-131V14*"&"{79R9} 64|34s30 123s21 185s21
+76K21*Unbounded 491e26 63|35w18 35r45
+79R9*Unbounded_String<19|43R9> 474e14 63|46r14 47r14 48r19 49r18 50r18 55r15
+. 56r17 62r15 65r26 64|52r17 53r23 92r13 109r17 191r17
+94V13*To_Unbounded_String{79R9} 64|78s20
+100V13*To_String{string} 64|58s28 58s68 60s26 62s12 73s19 73s46 89s29 90s28
+. 91s28 119s29 122s38 135s31 149s25 150s27 173s25 204s27
+119V14*"&"{79R9} 64|115s52 117s51
+123V14*"&"{79R9} 64|61s34 115s46 117s45
+127V14*"&"{79R9} 64|60s67 115s28 117s27
+131V14*"&"{79R9} 64|71s30 133s21 202s21
 X 30 a-stuten.ads
-42K21*UTF_Encoding 144e29 63|4w18 4r48
-59A12*UTF_8_String{string}<integer> 63|27r19 64|57r29 70r25 73r23 76r23 79r26
-. 94r37 138r28 141r26 159r28 163r28 169r33
+42K21*UTF_Encoding 144e29 63|37w18 37r48
+59A12*UTF_8_String{string}<integer> 63|64r19 121r26 135r34 64|93r16 96r14
+. 99r14 102r17 151r19 154r17 174r19 178r19 184r24
 X 33 a-textio.ads
-49K13*Text_IO 471e16 64|2w10 37r23 111r11 126r14 188r14
-263U14*Put_Line 64|37s31 111s19 126s22 188s22
+49K13*Text_IO 471e16 64|37w10 74r23 119r11 136r14 205r14
+263U14*Put_Line 64|74s31 119s19 136s22 205s22
 X 36 aws.ads
-32K9*AWS 41e8 63|5r6 5r22 64|4r6 5r6 5r33
+32K9*AWS 41e8 63|38r6 38r22 64|39r6 40r6 40r33
 X 38 aws-client.ads
-49K13*Client 659e15 63|5w10 60r20 64|5r10 26r20 113r7 114r7 118r24 119r26
-. 121r25 149r24 150r26 180r24 181r26 183r25
-289R9*HTTP_Connection<19|50R9> 634e14 63|60r27
-307U14*Create 64|113s14
-316b7 Persistent{boolean} 64|113r53
-548V13*Get_Socket{49|55P9} 64|26s27 118s31 119s33 121s32 149s31 150s33 180s31
-. 181s33 183s32
+49K13*Client 659e15 63|38w10 102r20 64|40r10 63r20 122r7 123r7 127r24 128r26
+. 131r25 161r24 162r26 196r24 197r26 200r25
+289R9*HTTP_Connection<19|50R9> 634e14 63|102r27
+307U14*Create 64|122s14
+316b7 Persistent{boolean} 64|122r53
+548V13*Get_Socket{49|55P9} 64|63s27 127s31 128s33 131s32 161s31 162s33 196s31
+. 197s33 200s32
 X 39 aws-client-http_utils.ads
-36K20*HTTP_Utils 185e26 64|5w17 114r14
-64U14*Connect 64|114s25
+36K20*HTTP_Utils 185e26 64|40w17 123r14
+64U14*Connect 64|123s25
 X 49 aws-net.ads
-44K13*Net 501e12 64|4r10 17r16 17r40 31r13 118r7 119r7 121r7 149r7 150r7
-. 180r7 181r7 183r7
+44K13*Net 501e12 64|39r10 54r16 54r40 68r13 127r7 128r7 131r7 161r7 162r7
+. 196r7 197r7 200r7
 54C9*Socket_Type<54R9>
-54H9*Socket_Type<19|43R9> 471e14 64|17r20
+54H9*Socket_Type<19|43R9> 471e14 64|54r20
 55P9*Socket_Access(54R9)
-89V13*Socket{54C9} 64|17s44
+89V13*Socket{54C9} 64|54s44
 X 50 aws-net-buffered.ads
-35K17*Buffered 142e21 64|4w14 31r17 118r11 119r11 121r11 149r11 150r11 180r11
-. 181r11 183r11
-41U14*Put 64|118s20 149s20 180s20
-55U14*Flush 64|119s20 150s20 181s20
-86U14*Read 64|31s26 121s20 183s20
+35K17*Buffered 142e21 64|39w14 68r17 127r11 128r11 131r11 161r11 162r11 196r11
+. 197r11 200r11
+41U14*Put 64|127s20 161s20 196s20
+55U14*Flush 64|128s20 162s20 197s20
+86U14*Read 64|68s26 131s20 200s20
 X 63 client_mqtt.ads
-6K9*client_mqtt 41E14 67l5 67e16 64|7b14 215l5 215t16
-8R9*Connection_MQTT 32p14 32r41 33p14 33r41 34p14 34r43 53r58 59c9 62e14
-. 64|19r59 48r41 133r41 155r43
-10R9*Connection_Parameters 16e14 32r74 64|48r74
-11r7*Host{29|79R9} 64|105r41 107r40
-12r7*Port{29|79R9} 64|105r65 107r64
-13r7*Client_ID{29|79R9} 64|50r59
-14r7*Username{29|79R9} 64|51r58
-15r7*Password{29|79R9} 64|52r58
-18R9*Publish_Parameters 21e14 33r74 64|133r74
-19r7*Topic{29|79R9} 64|134r55
-20r7*Message{29|79R9} 64|135r57
-24R9*Subscribe_Parameters 29e14 34r76 53r96 64|19r97 155r76
-25r7*Topic{29|79R9} 64|21r54 23r52 24r28 156r55
-26e7*QoS{character} 64|168r20 173r20
-27a7*Packet_ID{string} 64|160r20 172r20
-28r7*Expected_Message{29|79R9} 64|21r94 25r38
-32U14*ConnectMQTT 32=27 32>58 64|48b14 131l8 131t19
-32r27 This{8R9} 64|48b27 102m7 113m22 113r22 114m33 114r33 118r42 119r44
-. 121r43
-32r58 Parameters{10R9} 64|48b58 50r48 51r47 52r47 105r30 105r54 107r29 107r53
-33U14*PublishMQTT 33=27 33>58 64|133b14 153l8 153t19
-33r27 This{8R9} 64|133b27 149r42 150r44
-33r58 Parameters{18R9} 64|133b58 134r44 135r46
-34U14*SubscribeMQTT 34=29 34>60 64|155b14 194l8 194t21
-34r29 This{8R9} 64|155b29 180r42 181r44 183r43 192m39
-34r60 Parameters{24R9} 64|155b60 156r44 160r9 168r9 172r9 173r9 192r45
-36V13*ReceivedMQTT{boolean} 49b13
-37U14*ReadingMQTT 50b14
-41w14 Control_Subscriber 49r49 50r34 64|38r19 198b19 211l8 211t26
-42U17 DoneReadingMQTT 50s53 64|203b17 206l11 206t26
-43U17 Set_ReceivedMQTT 43>34 64|38s38 199b17 202l11 202t27 205s10
-43b34 set{boolean} 64|199b34 201r26
-44V16 Get_ReceivedMQTT{boolean} 49s68 64|207b16 210l11 210t27
-46b7 ReceivedMQTT{boolean} 64|201r10 209r17
-52T14 Subscriber_Task 54l8 54e23 57r15 64|12b14 44l8 44t23
-53Y13 Start_Subscriber_Task 53=36 53>75 64|19b14 28l11 28t32 192s16
-53r36 InConnection{8R9} 64|26r38
-53r75 Subscribe_Param{24R9} 64|21r38 21r78 23r36 24r12 25r22
-57t4 Sub_task{52T14} 64|192r7
-60r7*Connection{38|289R9} 64|26r51 113m27 114m38 118r47 119r49 121r48 149r47
-. 150r49 180r47 181r49 183r48
-61b7*Secure{boolean} 64|102m12
-64b4 Security{boolean} 64|17r51 102r22 104r10
+39K9*client_mqtt 82E14 145l5 145e16 64|42b14 234l5 234t16
+42R9*Connection_MQTT 70p14 70r41 71p14 71r41 72p14 72r43 94r58 101c9 104e14
+. 64|56r59 88r41 148r41 172r43
+45R9*Connection_Parameters 51e14 70r74 64|88r74
+46r7*Host{29|79R9} 64|115r41 117r40
+47r7*Port{29|79R9} 64|115r65 117r64
+48r7*Client_ID{29|79R9} 64|89r50
+49r7*Username{29|79R9} 64|90r49
+50r7*Password{29|79R9} 64|91r49
+54R9*Publish_Parameters 57e14 71r74 64|148r74
+55r7*Topic{29|79R9} 64|149r46
+56r7*Message{29|79R9} 64|150r48
+61R9*Subscribe_Parameters 66e14 72r76 94r96 64|56r97 172r76
+62r7*Topic{29|79R9} 64|58r54 60r52 61r28 173r46
+63e7*QoS{character} 64|183r20 188r20
+64a7*Packet_ID{string} 64|175r20 187r20
+65r7*Expected_Message{29|79R9} 64|58r94 62r38
+70U14*ConnectMQTT 70=27 70>58 64|88b14 141l8 141t19
+70r27 This{42R9} 64|88b27 113m7 122m22 122r22 123m33 123r33 127r42 128r44
+. 131r43
+70r58 Parameters{45R9} 64|88b58 89r39 90r38 91r38 115r30 115r54 117r29 117r53
+71U14*PublishMQTT 71=27 71>58 64|148b14 165l8 165t19
+71r27 This{42R9} 64|148b27 161r42 162r44
+71r58 Parameters{54R9} 64|148b58 149r35 150r37
+72U14*SubscribeMQTT 72=29 72>60 64|172b14 211l8 211t21
+72r29 This{42R9} 64|172b29 196r42 197r44 200r43 209m39
+72r60 Parameters{61R9} 64|172b60 173r35 175r9 183r9 187r9 188r9 209r45
+75U14*ReceivedMQTT 75<27 89b14
+75b27 leer{boolean} 89b27
+82w14 Control_Subscriber 89r55 64|75r19 220b19 230l8 230t26
+83U17 Set_ReceivedMQTT 83>34 64|75s38 221b17 224l11 224t27 228s10
+83b34 set{boolean} 64|221b34 223r26
+84U17 Read_ReceivedMQTT 84<35 89s74 64|225b17 229l11 229t28
+84b35 leer{boolean} 64|225b35 227m10
+86b7 ReceivedMQTT{boolean} 64|223r10 227r18
+93T14 Subscriber_Task 95l8 95e23 98r15 64|49b14 81l8 81t23
+94Y13 Start_Subscriber_Task 94=36 94>75 64|56b14 65l11 65t32 209s16
+94r36 InConnection{42R9} 64|63r38
+94r75 Subscribe_Param{61R9} 64|58r38 58r78 60r36 61r12 62r22
+98t4 Sub_task{93T14} 64|209r7
+102r7*Connection{38|289R9} 64|63r51 122m27 123m38 127r47 128r49 131r48 161r47
+. 162r49 196r47 197r49 200r48
+103b7*Secure{boolean} 64|113m12
+112b4 Security{boolean} 64|54r51 113r22 114r10
+119e4 Mqtt_Conn{character} 64|103r9
+121a4 Conn_header{30|59A12} 64|104r23 105r9
+135a4 Connection_Acepted{30|59A12} 64|135r10
+141e4 Mqtt_Pub{character} 64|155r9
+142e4 Mqtt_Sub{character} 64|179r9
 X 64 client_mqtt.adb
-13a7 Data{23|54A9} 31m38 34r46
-14i7 Size{23|44I9} 31m43 32r17 33r30
-15r7 Ret{29|79R9} 34m19 34r26 36r56 41m13
-16r7 Expected_MQTT{29|79R9} 20m10 36r29
-17c7 Socket<49|54R9> 26m10 31r31
-19r37 InConnection{63|8R9}
-19r76 Subscribe_Param{63|24R9}
-33i20 i<long_long_integer> 34r51
-50a7 Client_ID{string} 72r23 81r60 84r9
-51a7 Username{string} 75r23 81r93 86r9
-52a7 Password{string} 78r23 81r125 88r9
-53r7 URL{29|79R9} 105m10 107m10 111r39 113r48
-55e7 Mqtt_Conn{character} 80r9
-57a7 Conn_header{30|59A12} 81r23 82r9
-70a7 CIDLen=71:31{string} 81r44 83r9
-73a7 ULen=74:31{string} 81r79 85r9
-76a7 PLen=77:31{string} 81r111 87r9
-79a7 Connect=87:14{string} 118r63
-91a7 Data{23|54A9} 121m64 123r37
-92i7 Size{23|44I9} 121m69 122r21
-93r7 Ret{29|79R9} 123m10 123r17 125r41
-94a7 Connection_Acepted{30|59A12} 125r10
-99X7 Except 128r16
-122i11 i<long_long_integer> 123r42
-134a7 Topic{string} 140r23 143r43 145r9
-135a7 Message{string} 143r58 146r9
-136e7 Mqtt_Pub{character} 142r9
-138a7 Pub_header=139:31{string} 143r23 144r9
-141a7 Publish=145:15{string} 149r63
-156a7 Topic{string} 162r23 165r43 167r9 188r54
-157e7 Mqtt_Sub{character} 164r9
-159a7 Sub_header=161:31{string} 165r23 166r9
-163a7 Subscribe=167:15{string} 180r63
-169a7 Subscriber_Ack=172:30{string} 187r10
-174a7 Data{23|54A9} 183m64 185r37
-175i7 Size{23|44I9} 183m69 184r21
-176r7 Ret{29|79R9} 185m10 185r17 187r37
-177X7 Except 190r16
-184i11 i<long_long_integer> 185r42
+50a7 Data{23|54A9} 68m38 71r46
+51i7 Size{23|44I9} 68m43 69r17 70r30
+52r7 Ret{29|79R9} 71m19 71r26 73r56 78m13
+53r7 Expected_MQTT{29|79R9} 57m10 73r29
+54c7 Socket<49|54R9> 63m10 68r31
+56r37 InConnection{63|42R9}
+56r76 Subscribe_Param{63|61R9}
+70i20 i<long_long_integer> 71r51
+89a7 Client_ID{string} 95r23 104r60 105r32
+90a7 Username{string} 98r23 104r93 105r51
+91a7 Password{string} 101r23 104r125 105r69
+92r7 URL{29|79R9} 115m10 117m10 119r39 122r48
+93a7 CIDLen=94:31{string} 104r44 105r23
+96a7 ULen=97:31{string} 104r79 105r44
+99a7 PLen=100:31{string} 104r111 105r62
+102a7 Connect=105:67{string} 127r63
+107a7 Data{23|54A9} 131m64 133r37
+108i7 Size{23|44I9} 131m69 132r21
+109r7 Ret{29|79R9} 133m10 133r17 135r41
+110X7 Except 138r16
+132i11 i<long_long_integer> 133r42
+149a7 Topic{string} 153r23 156r43 157r22
+150a7 Message{string} 156r58 157r30
+151a7 Pub_header=152:31{string} 156r23 157r9
+154a7 Publish=157:28{string} 161r63
+173a7 Topic{string} 177r23 180r43 182r9 205r54
+174a7 Sub_header=176:31{string} 180r23 181r9
+178a7 Subscribe=182:15{string} 196r63
+184a7 Subscriber_Ack=187:30{string} 204r10
+189a7 Data{23|54A9} 200m64 202r37
+190i7 Size{23|44I9} 200m69 201r21
+191r7 Ret{29|79R9} 202m10 202r17 204r37
+192X7 Except 207r16
+201i11 i<long_long_integer> 202r42
 X 65 gnat.ads
-34K9*GNAT 63|3r6 3r24 65|37e9
+34K9*GNAT 63|36r6 36r24 65|37e9
 X 72 g-socket.ads
-55K14*Sockets 63|3w11 3r29 72|1288e17
+55K14*Sockets 63|36w11 36r29 72|1288e17
 X 80 system.ads
 67M9*Address
 X 94 s-memory.ads

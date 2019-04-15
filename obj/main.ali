@@ -20,7 +20,7 @@ RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		313bbe60 NE OO SU
+U main%b		main.adb		6dd31791 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
@@ -97,7 +97,7 @@ D aws-session.ads	20190413094955 41acdbbb aws.session%s
 D aws-status.ads	20190413094955 715df1ae aws.status%s
 D aws-url.ads		20190413094955 44a3858c aws.url%s
 D aws-utils.ads		20190413094955 8f9a062b aws.utils%s
-D client_mqtt.ads	20190414173238 3bd4c566 client_mqtt%s
+D client_mqtt.ads	20190415111030 fc01a1f4 client_mqtt%s
 D gnat.ads		20180525052302 fd2ad2f1 gnat%s
 D g-bytswa.ads		20180525052300 a4d21639 gnat.byte_swapping%s
 D g-regexp.ads		20180525052301 691be386 gnat.regexp%s
@@ -110,7 +110,7 @@ D interfac.ads		20180525052300 5ab55268 interfaces%s
 D i-c.ads		20180525052259 5421119b interfaces.c%s
 D i-cstrin.ads		20180525052301 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20180525052259 e53d8b8e interfaces.c_streams%s
-D main.adb		20190414173238 1ec4cb2d main%b
+D main.adb		20190415111404 85f9064e main%b
 D memory_streams.ads	20190413094955 bf3b9ce5 memory_streams%s
 D ssl.ads		20190413094955 3abd0079 ssl%s
 D ssl-thin__openssl.ads	20190413094954 d8a6b6aa ssl.thin%s
@@ -159,12 +159,12 @@ D templates_parser_tasking.ads  20190413094958 4c0209f0 templates_parser_tasking
 D unchconv.ads		20180525052259 ca2f9e18 unchecked_conversion%s
 D zlib.ads		20190413094955 0714e1ed zlib%s
 X 1 ada.ads
-16K9*Ada 20e8 74|3r6 3r33 5r6 34r10
+16K9*Ada 20e8 74|3r6 3r33 5r6 37r10
 X 8 a-conhel.ads
 84R12 Reference_Control_Type<19|43R9>
 X 21 a-iteint.ads
 24h9 Forward_Iterator
-32h9 Reversible_Iterator<24R9[13|75]>
+32h9 Reversible_Iterator<24R9[12|70]>
 X 24 a-string.ads
 16K13*Strings 35e16 74|3r10 3r37
 X 29 a-strunb.ads
@@ -172,43 +172,43 @@ X 29 a-strunb.ads
 94V13*To_Unbounded_String{79R9} 74|10s15 11s15 12s20 13s19 14s19 16s17 17s19
 . 19s16 22s27
 X 33 a-textio.ads
-49K13*Text_IO 471e16 74|5w10 34r14
-263U14*Put_Line 74|34s22
+49K13*Text_IO 471e16 74|5w10 37r14
+263U14*Put_Line 74|37s22
 X 36 aws.ads
 32K9*AWS 41e8 74|6r6 6r22
 X 38 aws-client.ads
 49K13*Client 659e15 74|6w10
 X 61 client_mqtt.ads
-6K9*client_mqtt 67e16 74|2w6 2r23
-8R9*Connection_MQTT 62e14 74|24r12
-10R9*Connection_Parameters 16e14 74|9r35
-11r7*Host{29|79R9} 74|10m7
-12r7*Port{29|79R9} 74|11m7
-13r7*Client_ID{29|79R9} 74|12m7
-14r7*Username{29|79R9} 74|13m7
-15r7*Password{29|79R9} 74|14m7
-18R9*Publish_Parameters 21e14 74|15r35
-19r7*Topic{29|79R9} 74|16m8
-20r7*Message{29|79R9} 74|17m8
-24R9*Subscribe_Parameters 29e14 74|18r37
-25r7*Topic{29|79R9} 74|19m7
-26e7*QoS{character} 74|20m7
-27a7*Packet_ID{string} 74|21m7
-28r7*Expected_Message{29|79R9} 74|22m7
-32U14*ConnectMQTT 74|26s10
-34U14*SubscribeMQTT 74|28s10
-36V13*ReceivedMQTT{boolean} 74|33s10
-37U14*ReadingMQTT 74|35s10
+39K9*client_mqtt 145e16 74|2w6 2r23
+42R9*Connection_MQTT 104e14 74|26r12
+45R9*Connection_Parameters 51e14 74|9r35
+46r7*Host{29|79R9} 74|10m7
+47r7*Port{29|79R9} 74|11m7
+48r7*Client_ID{29|79R9} 74|12m7
+49r7*Username{29|79R9} 74|13m7
+50r7*Password{29|79R9} 74|14m7
+54R9*Publish_Parameters 57e14 74|15r35
+55r7*Topic{29|79R9} 74|16m8
+56r7*Message{29|79R9} 74|17m8
+61R9*Subscribe_Parameters 66e14 74|18r37
+62r7*Topic{29|79R9} 74|19m7
+63e7*QoS{character} 74|20m7
+64a7*Packet_ID{string} 74|21m7
+65r7*Expected_Message{29|79R9} 74|22m7
+70U14*ConnectMQTT 74|28s10
+72U14*SubscribeMQTT 74|30s10
+75U14*ReceivedMQTT 74|35s7
 X 62 gnat.ads
 34K9*GNAT 37e9 74|4r6 4r24
 X 69 g-socket.ads
 55K14*Sockets 1288e17 74|4w11 4r29
 X 74 main.adb
-8U11*Main 8b11 39l5 39t9
-9r4 Parametros_conexion{61|10R9} 26r22
-15r4 Parametros_publicar{61|18R9}
-18r4 Parametros_Subscribir{61|24R9} 28r24
-24r4 Canal{61|8R9} 26m4 26r4 28m4 28r4
+8U11*Main 8b11 41l5 41t9
+9r4 Parametros_conexion{61|45R9} 28r22
+15r4 Parametros_publicar{61|54R9}
+18r4 Parametros_Subscribir{61|61R9} 30r24
+24b4 rec{boolean} 35m20 36r10
+26r4 Canal{61|42R9} 28m4 28r4 30m4 30r4
 X 78 system.ads
 67M9*Address
 X 88 s-memory.ads

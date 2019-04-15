@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#313bbe60#;
+   u00001 : constant Version_32 := 16#6dd31791#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -1093,9 +1093,9 @@ package ada_main is
    pragma Export (C, u00527, "aws__status__translate_setS");
    u00528 : constant Version_32 := 16#09e891f3#;
    pragma Export (C, u00528, "aws__exceptionsS");
-   u00529 : constant Version_32 := 16#9a78b379#;
+   u00529 : constant Version_32 := 16#ac6d0936#;
    pragma Export (C, u00529, "client_mqttB");
-   u00530 : constant Version_32 := 16#276e86ba#;
+   u00530 : constant Version_32 := 16#e0bbe228#;
    pragma Export (C, u00530, "client_mqttS");
    u00531 : constant Version_32 := 16#cd3494c7#;
    pragma Export (C, u00531, "ada__strings__utf_encodingB");

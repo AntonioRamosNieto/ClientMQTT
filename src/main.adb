@@ -21,6 +21,8 @@ procedure Main is
       Packet_ID => Character'Val(16#00#) & Character'Val(16#01#),
       Expected_Message => To_Unbounded_String ("tc"));
 
+   rec : Boolean := False;
+
    Canal : Connection_MQTT;
 begin
    Canal.ConnectMQTT(Parametros_conexion);
@@ -30,9 +32,9 @@ begin
 
    loop
       --Canal.PublishMQTT(Parametros_publicar);
-      if(ReceivedMQTT) then
+      ReceivedMQTT(rec);
+      if(rec) then
          Ada.Text_IO.Put_Line ("hecho");
-         ReadingMQTT;
       end if;
       delay (3.0);
    end loop;

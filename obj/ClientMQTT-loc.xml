@@ -1,289 +1,34 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project >
-    <file_marker column=" 16" line=" 32" >
+  <Project>
+    <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_file>
+    <file_marker column=" 45" line=" 11" >
       <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
       <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 32" line=" 61" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
       <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
+      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
       <vfs_project />
       <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_file>
     </file_marker>
-    <file_marker column=" 27" line=" 31" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 13" line=" 80" >
-      <vfs_project>/home/antonio/opt/GNAT/2018/share/gpr/aws.gpr</vfs_project>
-      <vfs_file>/home/antonio/opt/GNAT/2018/include/aws.static/aws-net-buffered.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 67" line=" 26" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
     <file_marker column=" 24" line=" 81" >
       <vfs_project>/home/antonio/opt/GNAT/2018/share/gpr/aws.gpr</vfs_project>
       <vfs_file>/home/antonio/opt/GNAT/2018/include/aws.static/aws-net-buffered.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 9" line=" 54" >
-      <vfs_project>/home/antonio/opt/GNAT/2018/share/gpr/aws.gpr</vfs_project>
-      <vfs_file>/home/antonio/opt/GNAT/2018/include/aws.static/aws-net.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 37" line=" 31" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 58" >
+    <file_marker column=" 17" line=" 145" >
       <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
       <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 7" line=" 60" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 58" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 17" line=" 60" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 28" line=" 8" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 56" line=" 32" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 22" line=" 26" >
+    <file_marker current="true" column=" 10" line=" 36" >
       <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
       <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 28" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 27" line=" 48" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 22" line=" 113" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 45" line=" 111" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 42" line=" 118" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 57" line=" 33" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 27" line=" 133" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 42" line=" 149" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 59" line=" 34" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 155" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 42" line=" 180" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 74" line=" 53" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 12" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 50" line=" 20" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 38" line=" 26" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 37" line=" 192" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 37" line=" 188" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 192" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 32" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 9" line=" 18" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 56" line=" 25" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 67" line=" 26" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 11" line=" 33" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 19" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 51" line=" 17" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 51" line=" 17" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 61" line=" 17" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 9" line=" 101" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 9" line=" 101" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 16" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 61" line=" 17" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 14" line=" 7" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 37" line=" 175" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 212" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 45" line=" 11" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 51" line=" 17" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 64" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 102" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 109" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 23" line=" 12" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 96" line=" 48" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 45" line=" 11" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/main.adb</vfs_file>
-    </file_marker>
-    <file_marker current="true" column=" 22" line=" 102" >
-      <vfs_project>/home/antonio/workspaceTFG/ClientMQTT/ClientMQTT.gpr</vfs_project>
-      <vfs_file>/home/antonio/workspaceTFG/ClientMQTT/src/client_mqtt.adb</vfs_file>
     </file_marker>
   </Project>
   <Project >
